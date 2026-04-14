@@ -10,3 +10,9 @@ def correlation_heatmap(data, parameters):
     sns.heatmap(corr_mat, annot=True, cmap='cubehelix', vmin=-1, vmax=1)
     plt.title('Correlation Matrix Heatmap')
     plt.show()
+
+
+if __name__ == "__main__":
+    from config import load_and_clean_data, DATA_PATH_56_7
+    data = load_and_clean_data(DATA_PATH_56_7)
+    correlation_heatmap(data, ['TEMP_DNI_RAW', 'ATEMP_RAW', 'PTEMP_RAW', 'DAGR_Temp'])

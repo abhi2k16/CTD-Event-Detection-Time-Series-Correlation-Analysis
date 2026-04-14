@@ -28,3 +28,9 @@ def outlier_analysis(data, end_time):
         fig.suptitle(parameter)
         fig.subplots_adjust(wspace=0.3, hspace=0.3)
         plt.show()
+
+
+if __name__ == "__main__":
+    from config import load_and_clean_data, DATA_PATH_56_7
+    data = load_and_clean_data(DATA_PATH_56_7)
+    outlier_analysis(data, end_time=135000)

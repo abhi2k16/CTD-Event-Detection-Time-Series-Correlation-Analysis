@@ -19,3 +19,9 @@ def plot_observed(data, start_time=0, end_time=140000):
     axs[3, 2].set(xlabel='Time (sec)')
     plt.subplots_adjust(wspace=0.3, hspace=0.3)
     plt.show()
+
+
+if __name__ == "__main__":
+    from config import load_and_clean_data, DATA_PATH_56_5
+    data = load_and_clean_data(DATA_PATH_56_5)
+    plot_observed(data, start_time=0, end_time=140000)

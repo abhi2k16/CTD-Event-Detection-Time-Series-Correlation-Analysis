@@ -33,3 +33,9 @@ def multi_axis_plot(data):
     ax2.spines['right'].set_color(colors[1])
     ax2.tick_params(axis='y', colors=colors[1])
     plt.show()
+
+
+if __name__ == "__main__":
+    from config import load_and_clean_data, DATA_PATH_56_7
+    data = load_and_clean_data(DATA_PATH_56_7)
+    multi_axis_plot(data)

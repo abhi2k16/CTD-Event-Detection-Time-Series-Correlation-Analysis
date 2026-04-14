@@ -130,3 +130,11 @@ class correlation:
             plt.suptitle(parameter, fontsize=16)
             plt.subplots_adjust(wspace=0.3, hspace=0.3)
             plt.show()
+
+
+if __name__ == "__main__":
+    from config import load_and_clean_data, DATA_PATH_56_5
+    data = load_and_clean_data(DATA_PATH_56_5)
+    corr = correlation(['N2_RATE', 'VIB_LAT', 'SHK_LAT', 'CIRC_PRS', 'IPRS_RAW', 'APRS_RAW'])
+    corr.corr_slid(data, start_time=300 * 60, end_time=600 * 60,
+                   time_steps=[2], fig_size=(8, 4), sub_plot_row=2, sub_plot_col=1)

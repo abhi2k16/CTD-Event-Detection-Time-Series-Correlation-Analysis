@@ -87,3 +87,12 @@ def NoiseQuantificationCV(data, corr_obj, x, time_step, end_time):
     plt.ylim(0, 0.7)
     plt.suptitle('VIB_LAT')
     plt.show()
+
+
+if __name__ == "__main__":
+    from config import load_and_clean_data, DATA_PATH_56_5
+    from correlation_class import correlation
+    data = load_and_clean_data(DATA_PATH_56_5)
+    corr_obj = correlation(['N2_RATE', 'VIB_LAT', 'SHK_LAT'])
+    NoiseQuantification(data, corr_obj, x=data.VIB_LAT[0:6000].values, time_step=10, end_time=6000)
+    NoiseQuantificationCV(data, corr_obj, x=data.SHK_LAT[0:135000].values, time_step=12, end_time=135000)
