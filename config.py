@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import scipy.stats as stats
 from scipy.stats import spearmanr
 
-DATA_PATH_56_5 = "*/O.1011724.56-5.csv"
-DATA_PATH_56_7 = "*/O.1011724.56-7.csv"
+DATA_PATH_56_5 = "*/O.1xxxxxxxx-5.csv"
+DATA_PATH_56_7 = "*/O.1xxxxx.xx-7.csv"
 
 parameters = [
     'N2_RATE', 'APRS_RAW', 'IPRS_RAW', 'WOB_DH', 'CT_WGT',
