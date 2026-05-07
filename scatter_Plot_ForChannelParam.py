@@ -10,9 +10,9 @@ parameters = ['N2_RATE','APRS_RAW','IPRS_RAW','WOB_DH','CT_WGT',
               'TEMP_DNI_RAW', 'ATEMP_RAW', 'PTEMP_RAW', 'DAGR_Temp','DEPT','INCL_RT_RAW',
               'AZIM_RT_RAW'] 
 #data = pd.read_csv("Pandas_dataframe_O_1011724_56-7.csv")
-data1 = pd.read_csv("C:/Users/AKumar340/OneDrive - SLB/2024/CTD_EventDetection/Data/O.1011724.56-5.csv")
-data2 = pd.read_csv("C:/Users/AKumar340/OneDrive - SLB/2024/CTD_EventDetection/Data/O.1011724.08-5.csv")
-data3 = pd.read_csv("C:/Users/AKumar340/OneDrive - SLB/2024/CTD_EventDetection/Data/O.1011724.56-7.csv")
+data1 = pd.read_csv("***/CTD_EventDetection/Data/O.1011724.56-5.csv")
+data2 = pd.read_csv("***/CTD_EventDetection/Data/O.1011724.08-5.csv")
+data3 = pd.read_csv("***/CTD_EventDetection/Data/O.1011724.56-7.csv")
 #%% make single dataframe
 data = [data1, data2, data3]
 data_list = []
